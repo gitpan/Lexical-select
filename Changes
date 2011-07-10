@@ -1,5 +1,15 @@
 ==============================
-9999-99-99 99:99:99 +0000 HEAD
+2011-07-10 11:26:13 +0100 0.06
+==============================
+
+  commit 4da27c23b48feaee1898dbcbf0ceed6c0a8680cf
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun Jul 10 11:26:13 2011 +0100
+  
+    Fluffed the last release. Fix it. 
+
+==============================
+2011-07-10 11:24:26 +0100 0.04
 ==============================
 
   commit 61e3a51b7298e70c9f57e90ebd4871a786283c72

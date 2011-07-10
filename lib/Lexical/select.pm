@@ -1,6 +1,6 @@
 package Lexical::select;
 BEGIN {
-  $Lexical::select::VERSION = '0.04';
+  $Lexical::select::VERSION = '0.06';
 }
 
 #ABSTRACT: provides a lexically scoped currently selected filehandle
@@ -42,7 +42,7 @@ Lexical::select - provides a lexically scoped currently selected filehandle
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 SYNOPSIS
 

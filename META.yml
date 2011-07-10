@@ -17,4 +17,4 @@ requires:
 resources:
   homepage: http://github.com/bingos/lexical-select
   repository: http://github.com/bingos/lexical-select
-version: 0.04
+version: 0.06
