@@ -1,6 +1,6 @@
 package Lexical::select;
 BEGIN {
-  $Lexical::select::VERSION = '0.02';
+  $Lexical::select::VERSION = '0.04';
 }
 
 #ABSTRACT: provides a lexically scoped currently selected filehandle
@@ -42,7 +42,7 @@ Lexical::select - provides a lexically scoped currently selected filehandle
 
 =head1 VERSION
 
-version 0.02
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -96,6 +96,10 @@ Explicitly restores the currently selected filehandle back to the original fileh
 when the object is C<DESTROY>ed, for instance when the object goes out of scope.
 
 =back
+
+=head1 SEE ALSO
+
+L<SelectSaver>
 
 =head1 AUTHOR
 

@@ -3,7 +3,7 @@ NAME
     filehandle
 
 VERSION
-    version 0.02
+    version 0.04
 
 SYNOPSIS
       use Lexical::select;
@@ -50,6 +50,9 @@ METHODS
         Explicitly restores the currently selected filehandle back to the
         original filehandle. This is called automagically when the object is
         "DESTROY"ed, for instance when the object goes out of scope.
+
+SEE ALSO
+    SelectSaver
 
 AUTHOR
     Chris Williams <chris@bingosnet.co.uk>
