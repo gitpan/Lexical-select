@@ -2,19 +2,23 @@
 abstract: 'provides a lexically scoped currently selected filehandle'
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
-build_requires: {}
+build_requires:
+  File::Spec: '0'
+  IO::Handle: '0'
+  IPC::Open3: '0'
+  Test::More: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200009, CPAN::Meta::Converter version 2.110930001'
+generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142060'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Lexical-select
 requires:
   perl: v5.6.0
 resources:
-  homepage: http://github.com/bingos/lexical-select
-  repository: http://github.com/bingos/lexical-select
-version: 0.06
+  homepage: https://github.com/bingos/lexical-select
+  repository: https://github.com/bingos/lexical-select.git
+version: '0.08'

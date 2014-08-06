@@ -1,8 +1,5 @@
 package Lexical::select;
-BEGIN {
-  $Lexical::select::VERSION = '0.06';
-}
-
+$Lexical::select::VERSION = '0.08';
 #ABSTRACT: provides a lexically scoped currently selected filehandle
 
 use strict;
@@ -21,7 +18,7 @@ sub lselect {
 sub restore {
   my $self = shift;
   return if $self->{_restored};
-  select delete $self->{old_fh};
+  CORE::select delete $self->{old_fh};
   return $self->{_restored} = 1;
 }
 
@@ -32,9 +29,11 @@ sub DESTROY {
 
 q[select $old_fh];
 
-
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -42,7 +41,7 @@ Lexical::select - provides a lexically scoped currently selected filehandle
 
 =head1 VERSION
 
-version 0.06
+version 0.08
 
 =head1 SYNOPSIS
 
@@ -107,10 +106,9 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Chris Williams.
+This software is copyright (c) 2014 by Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
