@@ -1,5 +1,5 @@
 package Lexical::select;
-$Lexical::select::VERSION = '0.08';
+$Lexical::select::VERSION = '0.10';
 #ABSTRACT: provides a lexically scoped currently selected filehandle
 
 use strict;
@@ -41,7 +41,7 @@ Lexical::select - provides a lexically scoped currently selected filehandle
 
 =head1 VERSION
 
-version 0.08
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -67,6 +67,9 @@ This is where Lexical::select comes in.
 
 Lexical::select provides the C<lselect> function. As demonstrated in the C<SYNOPSIS>, C<lselect> will change the currently
 selected filehandle to the filehandle of your choice for the duration of the enclosing lexical scope.
+
+It should be noted that the duration of the selected filehandle is limited to the lexical scope, not the effects of the
+selected filehandle.
 
 =head1 FUNCTIONS
 

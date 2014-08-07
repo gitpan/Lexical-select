@@ -3,7 +3,7 @@ NAME
     filehandle
 
 VERSION
-    version 0.08
+    version 0.10
 
 SYNOPSIS
       use Lexical::select;
@@ -31,6 +31,10 @@ DESCRIPTION
     "SYNOPSIS", "lselect" will change the currently selected filehandle to
     the filehandle of your choice for the duration of the enclosing lexical
     scope.
+
+    It should be noted that the duration of the selected filehandle is
+    limited to the lexical scope, not the effects of the selected
+    filehandle.
 
 FUNCTIONS
     Functions exported by default.
